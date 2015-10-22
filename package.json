@@ -2,6 +2,9 @@
   "name": "http-rewrite-proxy",
   "version": "1.0.0",
   "description": "Simple HTTP proxy rewriting server responses and serving on host.",
+  "bin": {
+    "http-rewrite-proxy": "./index.js"
+  },
   "main": "index.js",
   "repository": {
     "type": "git",
