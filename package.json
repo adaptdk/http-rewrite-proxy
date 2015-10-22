@@ -1,0 +1,28 @@
+{
+  "name": "http-rewrite-proxy",
+  "version": "1.0.0",
+  "description": "Simple HTTP proxy rewriting server responses and serving on host.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaptdk/http-rewrite-proxy.git"
+  },
+  "keywords": [
+    "http",
+    "rewrite",
+    "proxy",
+    "middleman"
+  ],
+  "author": "Adapt A/S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adaptdk/http-rewrite-proxy/issues"
+  },
+  "homepage": "https://github.com/adaptdk/http-rewrite-proxy#readme",
+  "devDependencies": {
+    "http": "0.0.0",
+    "minimist": "1.2.0",
+    "npmlog": "1.2.1",
+    "through": "2.3.8"
+  }
+}
