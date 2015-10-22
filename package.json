@@ -22,7 +22,7 @@
     "url": "https://github.com/adaptdk/http-rewrite-proxy/issues"
   },
   "homepage": "https://github.com/adaptdk/http-rewrite-proxy#readme",
-  "devDependencies": {
+  "dependencies": {
     "http": "0.0.0",
     "minimist": "1.2.0",
     "npmlog": "1.2.1",
