@@ -1,5 +1,5 @@
 {
-  "name": "http-rewrite-proxy",
+  "name": "@adaptdk/http-rewrite-proxy",
   "version": "1.0.2",
   "description": "Simple HTTP proxy rewriting server responses and serving on host.",
   "bin": {
