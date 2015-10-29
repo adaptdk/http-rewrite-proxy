@@ -2,7 +2,7 @@
 
 'use strict';
 
-var http = require('http');
+var http = require('follow-redirects').http;
 var through = require('through');
 var argv = require('minimist')(
   process.argv.slice(2),

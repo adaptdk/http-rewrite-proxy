@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/adaptdk/http-rewrite-proxy#readme",
   "dependencies": {
+    "follow-redirects": "0.0.7",
     "http": "0.0.0",
     "minimist": "1.2.0",
     "npmlog": "1.2.1",
