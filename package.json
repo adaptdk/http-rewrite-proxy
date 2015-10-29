@@ -1,6 +1,6 @@
 {
   "name": "http-rewrite-proxy",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Simple HTTP proxy rewriting server responses and serving on host.",
   "bin": {
     "http-rewrite-proxy": "./index.js"
