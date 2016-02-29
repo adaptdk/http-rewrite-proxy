@@ -67,7 +67,7 @@ http.createServer(function proxySite(clientRequest, clientResponse) {
           clientResponse.setHeader(key, headers[key]);
         }
       }
-      p
+
       serverResponse.pipe(arrivalProcessor);
       arrivalProcessor.pipe(clientResponse);
     });
