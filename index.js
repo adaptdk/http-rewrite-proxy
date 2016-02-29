@@ -40,6 +40,7 @@ http.createServer(function proxySite(clientRequest, clientResponse) {
     function modifyResponse(serverResponse) {
       var headers = serverResponse.headers;
       var load = serverResponse.client._httpMessage;
+      var type = headers['content-type'];
 
       log.http(load.method, load.path);
 
