@@ -38,7 +38,7 @@ http.createServer(function proxySite(clientRequest, clientResponse) {
       method: 'GET'
     },
     function modifyResponse(serverResponse) {
-      var type = serverResponse.headers['content-type'];
+      var headers = serverResponse.headers;
       var load = serverResponse.client._httpMessage;
 
       log.http(load.method, load.path);
@@ -62,10 +62,12 @@ http.createServer(function proxySite(clientRequest, clientResponse) {
         }
       });
 
-      if (type) {
-        clientResponse.setHeader('Content-Type', type);
+      for (var key in headers) {
+        if (key) {
+          clientResponse.setHeader(key, headers[key]);
+        }
       }
-
+      p
       serverResponse.pipe(arrivalProcessor);
       arrivalProcessor.pipe(clientResponse);
     });
